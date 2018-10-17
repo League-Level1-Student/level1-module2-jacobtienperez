@@ -6,6 +6,18 @@
 public class TeaMaker {
 
 	/* Figure out how to make a cup of tea using the classes below */
+	public static void main(String[] args) {
+		Kettle pot = new Kettle();
+		
+		pot.boil();
+		
+		TeaBag cod = new TeaBag(TeaBag.GREEN);
+		
+		
+		Cup head = new Cup();
+		head.makeTea(cod, pot.getWater());
+		
+	}
 
 }
 
@@ -38,6 +50,8 @@ class Kettle {
 
 	void boil() {
 		this.water.isHot = true;
+		
+
 	}
 
 	class Water {
@@ -46,6 +60,7 @@ class Kettle {
 
 		public boolean isHot() {
 			return this.isHot;
+	  
 		}
 	}
 
