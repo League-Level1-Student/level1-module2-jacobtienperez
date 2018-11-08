@@ -5,7 +5,8 @@ public static void main(String[] args) {
 	
 	pot.boil();
 	
-	TeaBag cod = new TeaBag(cod.GREEN);
+	TeaBag cod = new TeaBag(null);
+	
 	cod.getFlavor();
 	pot.getWater();
 	
