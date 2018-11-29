@@ -25,7 +25,10 @@ public class deck {
 	for (int i = 0; i < cards.length; i++) {
 		int  cardIndex1 = rnd.nextInt(cards.length);
 		int cardIndex2 = rnd.nextInt(cards.length);
-		int cardValue1 = cards[cardIndex1];}
+		int cardValue1 = cards[cardIndex1];
+		int cardValue2 = cards[cardIndex2];
+		cards[cardIndex1] = cardValue2;
+		cards[cardIndex2] = cardValue1;}
 		
 	}
 	
@@ -36,7 +39,7 @@ public class deck {
 	public int dealCard() {
 		if(getCardsleft() > 0) {
 	    nextCardIndex++;
-	    int card = card[nextCardIndex];
+	    int card = cards[nextCardIndex];
 		return card;
 		}
 	    else {
